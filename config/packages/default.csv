@@ -11,6 +11,7 @@
 ,mpd,"Music daemon"
 ,mpc,"Terminal interface for mpd"
 ,mpv,"Video player"
+,ncmpcpp,"Featureful ncurses based MPD client inspired by ncmpc"
 ,cava,"Music viz"
 ,vim,"Text Editor"
 ,feh,"Wallpaper configuration"
