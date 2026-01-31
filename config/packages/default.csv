@@ -28,6 +28,7 @@
 ,nsxiv,"Image viewer"
 ,fastfetch,"System information tool"
 ,htop,"Interactive process viewer"
+,fzf,"Command line fuzzy finder"
 ,ly,"Simple login manager"
 y,pywal,"For color schemes"
 y,tty-clock,"A tty clock"
