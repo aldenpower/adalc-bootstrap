@@ -1,0 +1,23 @@
+#!/bin/sh
+
+[ -f ~/.xprofile ] && . ~/.xprofile
+[[ -f ~/.Xresources ]] && xrdb -load ~/.Xresources
+[ -f ~/.xsessionrc ] && . ~/.xsessionrc
+
+exec ~/.config/adalc/scripts/dunst_launch.sh &
+exec sxhkd -c ~/.config/adalc/sxhkd/sxhkdrc &
+
+feh --bg-fill ~/.config/adalc/assets/wallpapers/dwallpaper.png &
+
+bash ~/.config/adalc/scripts/bar.sh &
+
+session=${1:-dwm}
+
+case $session in
+i3 | i3wm) exec i3 ;;
+kde) exec startplasma-x11 ;;
+xfce | xfce4) exec startxfce4 ;;
+dwm) exec ~/.config/adalc/scripts/dwmloop.sh ;;
+# No known session, try to run it as command
+*) exec $1 ;;
+esac

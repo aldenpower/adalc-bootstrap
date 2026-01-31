@@ -1,0 +1,17 @@
+# alias
+alias mtree="eza --icons -l -F -T -a"
+alias l="eza --icons -l -F --git"
+alias la="eza --icons -l -F -g -a --git"
+alias clock='tty-clock -c -s -C 7 -r -f "%A, %B %d"'
+alias mv="mv -i"
+alias rm="rm -i"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+alias cpb="xclip -sel clip"
+
+alias cpr='rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 "$@"'
+alias mvr='rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 --remove-source-files "$@"'
+alias scscpb='maim -s -o --format png /dev/stdout| xclip -selection clipboard -t image/png -i'
+alias tmux='tmux -f ~/.config/adalc/tmux/tmux.conf'

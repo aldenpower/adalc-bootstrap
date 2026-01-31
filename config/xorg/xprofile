@@ -1,0 +1,6 @@
+#!/bin/sh
+
+picom --config ~/.config/adalc/picom/picom.conf &
+
+# MPD daemon start (if no other user instance exists)
+[ ! -s ~/.config/mpd/pid ] && mpd ~/.config/adalc/mpd/mpd.conf

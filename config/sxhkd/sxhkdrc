@@ -1,0 +1,18 @@
+super + shift + v
+        alacritty -e pulsemixer
+super + shift + n
+        alacritty -e nmtui
+super + shift + l
+        slock
+super + shift + r
+        pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+Print
+        maim $HOME/$(date +"%Y-%m-%d_%H:%M:%S").png
+XF86AudioPlay
+        mpc toggle
+XF86AudioNext
+        mpc next
+XF86AudioPrev
+        mpc prev
+super + backspace
+    setxkbmap -query | grep -q 'us' && setxkbmap br || setxkbmap us
