@@ -43,3 +43,8 @@ cd adalc-bootstrap
 ./install.sh
 ```
 **Reboot the system after installation**
+
+## Support
+
+If this project saved you time, consider buying me a coffee
+- [Ko-fi](https://ko-fi.com/aldenpower)
