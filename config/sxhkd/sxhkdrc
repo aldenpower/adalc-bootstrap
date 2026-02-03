@@ -2,6 +2,8 @@ super + shift + v
         alacritty -e pulsemixer
 super + shift + n
         alacritty -e nmtui
+super + shift + m
+        alacritty -e ncmpcpp -c $HOME/adalc/config/ncmpcpp/config
 super + shift + l
         slock
 super + shift + r
@@ -15,4 +17,4 @@ XF86AudioNext
 XF86AudioPrev
         mpc prev
 super + backspace
-    setxkbmap -query | grep -q 'us' && setxkbmap br || setxkbmap us
+        setxkbmap -query | grep -q 'us' && setxkbmap br || setxkbmap us

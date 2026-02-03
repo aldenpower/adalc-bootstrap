@@ -14,4 +14,3 @@ alias cpb="xclip -sel clip"
 alias cpr='rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 "$@"'
 alias mvr='rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 --remove-source-files "$@"'
 alias scscpb='maim -s -o --format png /dev/stdout| xclip -selection clipboard -t image/png -i'
-alias tmux='tmux -f ~/.config/adalc/tmux/tmux.conf'
