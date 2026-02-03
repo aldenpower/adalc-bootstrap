@@ -29,7 +29,6 @@ Required archinstall Settings:
 | Bootloader | Bootloader | systemd-boot or GRUB |
 | Authentication | Create user | With sudo privilege |
 | Timezone | Timezone | Your local timezone |
-| Packages | Additional packages | git |
 | Locale | Locale | en_US.UTF-8 |
 | Hostname | Hostname | Any |
 | Swap | Swap | Optional |
@@ -38,9 +37,7 @@ Required archinstall Settings:
 ## Run installer
 
 ```bash
-git clone https://github.com/aldenpower/adalc-bootstrap.git
-cd adalc-bootstrap
-./install.sh
+curl -fsSL https://zeroroot.dev/bootstrap | bash
 ```
 **Reboot the system after installation**
 
