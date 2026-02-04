@@ -94,8 +94,9 @@ done <"$tmpfile"
 rm -f "$tmpfile"
 
 log_info "Create adalc sources"
-mkdir -p "$XDG_CONFIG_HOME/adalc"
-cp -r $ROOT_DIR/config/* "$XDG_CONFIG_HOME/adalc/"
+rm -rf "$ADALC_CONFIG"
+mkdir "$ADALC_CONFIG"
+cp -r $ROOT_DIR/config/* "$ADALC_CONFIG"
 
 log_info "Building suckless tools"
 sudo make -C "$ROOT_DIR" all >/dev/null 2>&1
